@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 300px;
+}
+
+/* Fieldset styling */
+fieldset {
+    border: none;
+}
+
+/* Legend (Login title) */
+legend {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+button {
+    width: 48%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Submit button */
+button:first-of-type {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Reset button */
+button:last-of-type {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Button hover effect */
+button:hover {
+    opacity: 0.9;
+}
+</style>
+
+<body>
+    <form action="">
+
+        <fieldset>
+            <legend>Login</legend>
+
+            <label for="email">Enter Email:</label>
+            <input type="email" id="email" placeholder="Enter email" name="email">
+            <br><br>
+            <label for="password">Enter Passowrd:</label>
+            <input type="password" id="password" placeholder="Enter password" name="password">
+            <br><br>
+            <button>Submit</button>
+            <button>Reset</button>
+
+        </fieldset>
+    </form>
+</body>
+<script src="./script/Login.js"></script>
+
+</html>
